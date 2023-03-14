@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		614C95CF29C08DB2004C1397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95CE29C08DB2004C1397 /* AppDelegate.swift */; };
+		614C95D129C08DB2004C1397 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95D029C08DB2004C1397 /* SceneDelegate.swift */; };
+		614C95D329C08DB2004C1397 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95D229C08DB2004C1397 /* ViewController.swift */; };
+		614C95D629C08DB2004C1397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614C95D429C08DB2004C1397 /* Main.storyboard */; };
+		614C95D829C08DC6004C1397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614C95D729C08DC6004C1397 /* Assets.xcassets */; };
+		614C95DB29C08DC6004C1397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614C95D929C08DC6004C1397 /* LaunchScreen.storyboard */; };
+		614C95E629C08DC8004C1397 /* GeelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95E529C08DC8004C1397 /* GeelyTests.swift */; };
+		614C95F029C08DC8004C1397 /* GeelyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95EF29C08DC8004C1397 /* GeelyUITests.swift */; };
+		614C95F229C08DC8004C1397 /* GeelyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95F129C08DC8004C1397 /* GeelyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		614C95E229C08DC8004C1397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 614C95C329C08DB2004C1397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 614C95CA29C08DB2004C1397;
+			remoteInfo = Geely;
+		};
+		614C95EC29C08DC8004C1397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 614C95C329C08DB2004C1397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 614C95CA29C08DB2004C1397;
+			remoteInfo = Geely;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		614C95CB29C08DB2004C1397 /* Geely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geely.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		614C95CE29C08DB2004C1397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		614C95D029C08DB2004C1397 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		614C95D229C08DB2004C1397 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		614C95D529C08DB2004C1397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		614C95D729C08DC6004C1397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		614C95DA29C08DC6004C1397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		614C95DC29C08DC6004C1397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		614C95E129C08DC8004C1397 /* GeelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeelyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		614C95E529C08DC8004C1397 /* GeelyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeelyTests.swift; sourceTree = "<group>"; };
+		614C95EB29C08DC8004C1397 /* GeelyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeelyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		614C95EF29C08DC8004C1397 /* GeelyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeelyUITests.swift; sourceTree = "<group>"; };
+		614C95F129C08DC8004C1397 /* GeelyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeelyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		614C95C829C08DB2004C1397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614C95DE29C08DC8004C1397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614C95E829C08DC8004C1397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		614C95C229C08DB2004C1397 = {
+			isa = PBXGroup;
+			children = (
+				614C95CD29C08DB2004C1397 /* Geely */,
+				614C95E429C08DC8004C1397 /* GeelyTests */,
+				614C95EE29C08DC8004C1397 /* GeelyUITests */,
+				614C95CC29C08DB2004C1397 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		614C95CC29C08DB2004C1397 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				614C95CB29C08DB2004C1397 /* Geely.app */,
+				614C95E129C08DC8004C1397 /* GeelyTests.xctest */,
+				614C95EB29C08DC8004C1397 /* GeelyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		614C95CD29C08DB2004C1397 /* Geely */ = {
+			isa = PBXGroup;
+			children = (
+				614C95CE29C08DB2004C1397 /* AppDelegate.swift */,
+				614C95D029C08DB2004C1397 /* SceneDelegate.swift */,
+				614C95D229C08DB2004C1397 /* ViewController.swift */,
+				614C95D429C08DB2004C1397 /* Main.storyboard */,
+				614C95D729C08DC6004C1397 /* Assets.xcassets */,
+				614C95D929C08DC6004C1397 /* LaunchScreen.storyboard */,
+				614C95DC29C08DC6004C1397 /* Info.plist */,
+			);
+			path = Geely;
+			sourceTree = "<group>";
+		};
+		614C95E429C08DC8004C1397 /* GeelyTests */ = {
+			isa = PBXGroup;
+			children = (
+				614C95E529C08DC8004C1397 /* GeelyTests.swift */,
+			);
+			path = GeelyTests;
+			sourceTree = "<group>";
+		};
+		614C95EE29C08DC8004C1397 /* GeelyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				614C95EF29C08DC8004C1397 /* GeelyUITests.swift */,
+				614C95F129C08DC8004C1397 /* GeelyUITestsLaunchTests.swift */,
+			);
+			path = GeelyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		614C95CA29C08DB2004C1397 /* Geely */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 614C95F529C08DC8004C1397 /* Build configuration list for PBXNativeTarget "Geely" */;
+			buildPhases = (
+				614C95C729C08DB2004C1397 /* Sources */,
+				614C95C829C08DB2004C1397 /* Frameworks */,
+				614C95C929C08DB2004C1397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Geely;
+			productName = Geely;
+			productReference = 614C95CB29C08DB2004C1397 /* Geely.app */;
+			productType = "com.apple.product-type.application";
+		};
+		614C95E029C08DC8004C1397 /* GeelyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 614C95F829C08DC8004C1397 /* Build configuration list for PBXNativeTarget "GeelyTests" */;
+			buildPhases = (
+				614C95DD29C08DC8004C1397 /* Sources */,
+				614C95DE29C08DC8004C1397 /* Frameworks */,
+				614C95DF29C08DC8004C1397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				614C95E329C08DC8004C1397 /* PBXTargetDependency */,
+			);
+			name = GeelyTests;
+			productName = GeelyTests;
+			productReference = 614C95E129C08DC8004C1397 /* GeelyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		614C95EA29C08DC8004C1397 /* GeelyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 614C95FB29C08DC8004C1397 /* Build configuration list for PBXNativeTarget "GeelyUITests" */;
+			buildPhases = (
+				614C95E729C08DC8004C1397 /* Sources */,
+				614C95E829C08DC8004C1397 /* Frameworks */,
+				614C95E929C08DC8004C1397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				614C95ED29C08DC8004C1397 /* PBXTargetDependency */,
+			);
+			name = GeelyUITests;
+			productName = GeelyUITests;
+			productReference = 614C95EB29C08DC8004C1397 /* GeelyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		614C95C329C08DB2004C1397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					614C95CA29C08DB2004C1397 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					614C95E029C08DC8004C1397 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 614C95CA29C08DB2004C1397;
+					};
+					614C95EA29C08DC8004C1397 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 614C95CA29C08DB2004C1397;
+					};
+				};
+			};
+			buildConfigurationList = 614C95C629C08DB2004C1397 /* Build configuration list for PBXProject "Geely" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 614C95C229C08DB2004C1397;
+			productRefGroup = 614C95CC29C08DB2004C1397 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				614C95CA29C08DB2004C1397 /* Geely */,
+				614C95E029C08DC8004C1397 /* GeelyTests */,
+				614C95EA29C08DC8004C1397 /* GeelyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		614C95C929C08DB2004C1397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614C95DB29C08DC6004C1397 /* LaunchScreen.storyboard in Resources */,
+				614C95D829C08DC6004C1397 /* Assets.xcassets in Resources */,
+				614C95D629C08DB2004C1397 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614C95DF29C08DC8004C1397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614C95E929C08DC8004C1397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		614C95C729C08DB2004C1397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614C95D329C08DB2004C1397 /* ViewController.swift in Sources */,
+				614C95CF29C08DB2004C1397 /* AppDelegate.swift in Sources */,
+				614C95D129C08DB2004C1397 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614C95DD29C08DC8004C1397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614C95E629C08DC8004C1397 /* GeelyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614C95E729C08DC8004C1397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614C95F029C08DC8004C1397 /* GeelyUITests.swift in Sources */,
+				614C95F229C08DC8004C1397 /* GeelyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		614C95E329C08DC8004C1397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 614C95CA29C08DB2004C1397 /* Geely */;
+			targetProxy = 614C95E229C08DC8004C1397 /* PBXContainerItemProxy */;
+		};
+		614C95ED29C08DC8004C1397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 614C95CA29C08DB2004C1397 /* Geely */;
+			targetProxy = 614C95EC29C08DC8004C1397 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		614C95D429C08DB2004C1397 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				614C95D529C08DB2004C1397 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		614C95D929C08DC6004C1397 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				614C95DA29C08DC6004C1397 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		614C95F329C08DC8004C1397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		614C95F429C08DC8004C1397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		614C95F629C08DC8004C1397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Geely/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LaithQasem.Geely;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		614C95F729C08DC8004C1397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Geely/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LaithQasem.Geely;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		614C95F929C08DC8004C1397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LaithQasem.GeelyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geely.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Geely";
+			};
+			name = Debug;
+		};
+		614C95FA29C08DC8004C1397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LaithQasem.GeelyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geely.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Geely";
+			};
+			name = Release;
+		};
+		614C95FC29C08DC8004C1397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LaithQasem.GeelyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Geely;
+			};
+			name = Debug;
+		};
+		614C95FD29C08DC8004C1397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LaithQasem.GeelyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Geely;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		614C95C629C08DB2004C1397 /* Build configuration list for PBXProject "Geely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614C95F329C08DC8004C1397 /* Debug */,
+				614C95F429C08DC8004C1397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		614C95F529C08DC8004C1397 /* Build configuration list for PBXNativeTarget "Geely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614C95F629C08DC8004C1397 /* Debug */,
+				614C95F729C08DC8004C1397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		614C95F829C08DC8004C1397 /* Build configuration list for PBXNativeTarget "GeelyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614C95F929C08DC8004C1397 /* Debug */,
+				614C95FA29C08DC8004C1397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		614C95FB29C08DC8004C1397 /* Build configuration list for PBXNativeTarget "GeelyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614C95FC29C08DC8004C1397 /* Debug */,
+				614C95FD29C08DC8004C1397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 614C95C329C08DB2004C1397 /* Project object */;
+}
