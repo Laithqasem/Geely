@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6136FB9529D10B40004D96D3 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6136FB9429D10B40004D96D3 /* ServicesCollectionViewCell.swift */; };
+		6136FB9729D10E2D004D96D3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6136FB9629D10E2D004D96D3 /* Service.swift */; };
 		614C95CF29C08DB2004C1397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95CE29C08DB2004C1397 /* AppDelegate.swift */; };
 		614C95D129C08DB2004C1397 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95D029C08DB2004C1397 /* SceneDelegate.swift */; };
 		614C95D329C08DB2004C1397 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95D229C08DB2004C1397 /* LoginViewController.swift */; };
@@ -23,6 +25,14 @@
 		614C960929C0B5A3004C1397 /* gotham_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 614C960229C0B5A3004C1397 /* gotham_medium.ttf */; };
 		614C960A29C0B5A3004C1397 /* gotham_black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 614C960329C0B5A3004C1397 /* gotham_black.otf */; };
 		614C960B29C0B5A3004C1397 /* fbspacer_regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 614C960429C0B5A3004C1397 /* fbspacer_regular.otf */; };
+		61726FDB29D186A1001AB06A /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61726FDA29D186A1001AB06A /* CarCollectionViewCell.xib */; };
+		61726FDD29D191B8001AB06A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61726FDC29D191B8001AB06A /* Colors.swift */; };
+		61726FE029D1B608001AB06A /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61726FDF29D1B608001AB06A /* TextFieldWithPadding.swift */; };
+		619D38FB29C997B800E9A9D3 /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D38FA29C997B800E9A9D3 /* HomeScreenController.swift */; };
+		61CBE01729C9B20C009652C8 /* customizeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CBE01629C9B20C009652C8 /* customizeTabBar.swift */; };
+		61CBE01929C9BB23009652C8 /* navigationBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CBE01829C9BB23009652C8 /* navigationBarController.swift */; };
+		61CBE01F29CAF725009652C8 /* HomeScreenNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CBE01E29CAF725009652C8 /* HomeScreenNavigationController.swift */; };
+		61CBE02129CB16FD009652C8 /* CurvedTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CBE02029CB16FC009652C8 /* CurvedTabBar.swift */; };
 		61D6059729C6860B0058E711 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6057C29C6860B0058E711 /* IQTextView.swift */; };
 		61D6059829C6860B0058E711 /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6057D29C6860B0058E711 /* IQKeyboardManager+Internal.swift */; };
 		61D6059929C6860B0058E711 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6057F29C6860B0058E711 /* IQPreviousNextView.swift */; };
@@ -46,6 +56,7 @@
 		61D605AB29C6860B0058E711 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6059429C6860B0058E711 /* IQUIView+Hierarchy.swift */; };
 		61D605AC29C6860B0058E711 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6059529C6860B0058E711 /* IQNSArray+Sort.swift */; };
 		61D605AD29C6860B0058E711 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6059629C6860B0058E711 /* IQKeyboardManager+UITextFieldViewNotification.swift */; };
+		61EAAB8B29CCF9BB0083FF4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61EAAB8A29CCF9BB0083FF4F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6136FB9429D10B40004D96D3 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
+		6136FB9629D10E2D004D96D3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		614C95CB29C08DB2004C1397 /* Geely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		614C95CE29C08DB2004C1397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		614C95D029C08DB2004C1397 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +99,14 @@
 		614C960229C0B5A3004C1397 /* gotham_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gotham_medium.ttf; path = ../../../Downloads/font/gotham_medium.ttf; sourceTree = "<group>"; };
 		614C960329C0B5A3004C1397 /* gotham_black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gotham_black.otf; path = ../../../Downloads/font/gotham_black.otf; sourceTree = "<group>"; };
 		614C960429C0B5A3004C1397 /* fbspacer_regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = fbspacer_regular.otf; path = ../../../Downloads/font/fbspacer_regular.otf; sourceTree = "<group>"; };
+		61726FDA29D186A1001AB06A /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
+		61726FDC29D191B8001AB06A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		61726FDF29D1B608001AB06A /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
+		619D38FA29C997B800E9A9D3 /* HomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenController.swift; sourceTree = "<group>"; };
+		61CBE01629C9B20C009652C8 /* customizeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customizeTabBar.swift; sourceTree = "<group>"; };
+		61CBE01829C9BB23009652C8 /* navigationBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationBarController.swift; sourceTree = "<group>"; };
+		61CBE01E29CAF725009652C8 /* HomeScreenNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenNavigationController.swift; sourceTree = "<group>"; };
+		61CBE02029CB16FC009652C8 /* CurvedTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedTabBar.swift; sourceTree = "<group>"; };
 		61D6057C29C6860B0058E711 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
 		61D6057D29C6860B0058E711 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
 		61D6057F29C6860B0058E711 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
@@ -110,6 +131,7 @@
 		61D6059429C6860B0058E711 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		61D6059529C6860B0058E711 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		61D6059629C6860B0058E711 /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
+		61EAAB8A29CCF9BB0083FF4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,14 +189,18 @@
 		614C95CD29C08DB2004C1397 /* Geely */ = {
 			isa = PBXGroup;
 			children = (
-				61D6057A29C6860B0058E711 /* IQKeyboardManagerSwift */,
+				61726FDE29D1B2C9001AB06A /* MainPage */,
+				61EAAB8A29CCF9BB0083FF4F /* Assets.xcassets */,
 				614C95CE29C08DB2004C1397 /* AppDelegate.swift */,
-				614C95D029C08DB2004C1397 /* SceneDelegate.swift */,
-				614C95D229C08DB2004C1397 /* LoginViewController.swift */,
 				614C95D429C08DB2004C1397 /* Main.storyboard */,
+				61726FDC29D191B8001AB06A /* Colors.swift */,
+				614C95D029C08DB2004C1397 /* SceneDelegate.swift */,
+				61726FE129D1B7B6001AB06A /* LoginPage */,
 				614C95D729C08DC6004C1397 /* Assets.xcassets */,
 				614C95D929C08DC6004C1397 /* LaunchScreen.storyboard */,
+				61D6057A29C6860B0058E711 /* IQKeyboardManagerSwift */,
 				614C95DC29C08DC6004C1397 /* Info.plist */,
+				61726FDA29D186A1001AB06A /* CarCollectionViewCell.xib */,
 			);
 			path = Geely;
 			sourceTree = "<group>";
@@ -194,6 +220,29 @@
 				614C95F129C08DC8004C1397 /* GeelyUITestsLaunchTests.swift */,
 			);
 			path = GeelyUITests;
+			sourceTree = "<group>";
+		};
+		61726FDE29D1B2C9001AB06A /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				61CBE01E29CAF725009652C8 /* HomeScreenNavigationController.swift */,
+				619D38FA29C997B800E9A9D3 /* HomeScreenController.swift */,
+				6136FB9629D10E2D004D96D3 /* Service.swift */,
+				61CBE01829C9BB23009652C8 /* navigationBarController.swift */,
+				61CBE01629C9B20C009652C8 /* customizeTabBar.swift */,
+				61CBE02029CB16FC009652C8 /* CurvedTabBar.swift */,
+				6136FB9429D10B40004D96D3 /* ServicesCollectionViewCell.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		61726FE129D1B7B6001AB06A /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				614C95D229C08DB2004C1397 /* LoginViewController.swift */,
+				61726FDF29D1B608001AB06A /* TextFieldWithPadding.swift */,
+			);
+			path = LoginPage;
 			sourceTree = "<group>";
 		};
 		61D6057A29C6860B0058E711 /* IQKeyboardManagerSwift */ = {
@@ -366,6 +415,7 @@
 			files = (
 				614C960529C0B5A3004C1397 /* gotham_bold.otf in Resources */,
 				614C960629C0B5A3004C1397 /* fbspacer_black.otf in Resources */,
+				61EAAB8B29CCF9BB0083FF4F /* Assets.xcassets in Resources */,
 				614C960729C0B5A3004C1397 /* gotham_book.ttf in Resources */,
 				614C960829C0B5A3004C1397 /* fbspacer_bold.otf in Resources */,
 				614C960929C0B5A3004C1397 /* gotham_medium.ttf in Resources */,
@@ -374,6 +424,7 @@
 				614C95DB29C08DC6004C1397 /* LaunchScreen.storyboard in Resources */,
 				614C95D829C08DC6004C1397 /* Assets.xcassets in Resources */,
 				614C95D629C08DB2004C1397 /* Main.storyboard in Resources */,
+				61726FDB29D186A1001AB06A /* CarCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,17 +449,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61CBE02129CB16FD009652C8 /* CurvedTabBar.swift in Sources */,
 				614C95D329C08DB2004C1397 /* LoginViewController.swift in Sources */,
 				61D605AC29C6860B0058E711 /* IQNSArray+Sort.swift in Sources */,
+				61726FDD29D191B8001AB06A /* Colors.swift in Sources */,
+				61CBE01F29CAF725009652C8 /* HomeScreenNavigationController.swift in Sources */,
+				619D38FB29C997B800E9A9D3 /* HomeScreenController.swift in Sources */,
 				61D6059E29C6860B0058E711 /* IQInvocation.swift in Sources */,
+				61726FE029D1B608001AB06A /* TextFieldWithPadding.swift in Sources */,
 				61D6059729C6860B0058E711 /* IQTextView.swift in Sources */,
 				61D6059B29C6860B0058E711 /* IQBarButtonItem.swift in Sources */,
 				61D6059929C6860B0058E711 /* IQPreviousNextView.swift in Sources */,
 				61D605A829C6860B0058E711 /* IQUIScrollView+Additions.swift in Sources */,
 				61D6059829C6860B0058E711 /* IQKeyboardManager+Internal.swift in Sources */,
 				61D605AA29C6860B0058E711 /* IQUITextFieldView+Additions.swift in Sources */,
+				6136FB9529D10B40004D96D3 /* ServicesCollectionViewCell.swift in Sources */,
 				614C95CF29C08DB2004C1397 /* AppDelegate.swift in Sources */,
 				614C95D129C08DB2004C1397 /* SceneDelegate.swift in Sources */,
+				61CBE01929C9BB23009652C8 /* navigationBarController.swift in Sources */,
 				61D605A129C6860B0058E711 /* IQKeyboardManagerConstants.swift in Sources */,
 				61D6059F29C6860B0058E711 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
 				61D605A329C6860B0058E711 /* IQKeyboardReturnKeyHandler.swift in Sources */,
@@ -418,8 +476,10 @@
 				61D605A929C6860B0058E711 /* IQUIViewController+Additions.swift in Sources */,
 				61D605AB29C6860B0058E711 /* IQUIView+Hierarchy.swift in Sources */,
 				61D605A529C6860B0058E711 /* IQKeyboardManager+Debug.swift in Sources */,
+				6136FB9729D10E2D004D96D3 /* Service.swift in Sources */,
 				61D605A729C6860B0058E711 /* IQKeyboardManager+Toolbar.swift in Sources */,
 				61D6059A29C6860B0058E711 /* IQTitleBarButtonItem.swift in Sources */,
+				61CBE01729C9B20C009652C8 /* customizeTabBar.swift in Sources */,
 				61D605A229C6860B0058E711 /* IQKeyboardManager+Position.swift in Sources */,
 				61D6059D29C6860B0058E711 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				61D605A029C6860B0058E711 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
@@ -608,6 +668,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -636,6 +697,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
