@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612EE03829D42E8B00DBA06B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612EE03729D42E8B00DBA06B /* HomeCollectionViewCell.swift */; };
+		612EE03A29D4399D00DBA06B /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612EE03929D4399D00DBA06B /* Car.swift */; };
 		6136FB9529D10B40004D96D3 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6136FB9429D10B40004D96D3 /* ServicesCollectionViewCell.swift */; };
 		6136FB9729D10E2D004D96D3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6136FB9629D10E2D004D96D3 /* Service.swift */; };
 		614C95CF29C08DB2004C1397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95CE29C08DB2004C1397 /* AppDelegate.swift */; };
@@ -18,13 +20,6 @@
 		614C95E629C08DC8004C1397 /* GeelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95E529C08DC8004C1397 /* GeelyTests.swift */; };
 		614C95F029C08DC8004C1397 /* GeelyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95EF29C08DC8004C1397 /* GeelyUITests.swift */; };
 		614C95F229C08DC8004C1397 /* GeelyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C95F129C08DC8004C1397 /* GeelyUITestsLaunchTests.swift */; };
-		614C960529C0B5A3004C1397 /* gotham_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 614C95FE29C0B5A2004C1397 /* gotham_bold.otf */; };
-		614C960629C0B5A3004C1397 /* fbspacer_black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 614C95FF29C0B5A2004C1397 /* fbspacer_black.otf */; };
-		614C960729C0B5A3004C1397 /* gotham_book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 614C960029C0B5A2004C1397 /* gotham_book.ttf */; };
-		614C960829C0B5A3004C1397 /* fbspacer_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 614C960129C0B5A3004C1397 /* fbspacer_bold.otf */; };
-		614C960929C0B5A3004C1397 /* gotham_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 614C960229C0B5A3004C1397 /* gotham_medium.ttf */; };
-		614C960A29C0B5A3004C1397 /* gotham_black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 614C960329C0B5A3004C1397 /* gotham_black.otf */; };
-		614C960B29C0B5A3004C1397 /* fbspacer_regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 614C960429C0B5A3004C1397 /* fbspacer_regular.otf */; };
 		61726FDB29D186A1001AB06A /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61726FDA29D186A1001AB06A /* CarCollectionViewCell.xib */; };
 		61726FDD29D191B8001AB06A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61726FDC29D191B8001AB06A /* Colors.swift */; };
 		61726FE029D1B608001AB06A /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61726FDF29D1B608001AB06A /* TextFieldWithPadding.swift */; };
@@ -77,6 +72,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		612EE03729D42E8B00DBA06B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		612EE03929D4399D00DBA06B /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		612EE04129DAC68F00DBA06B /* gotham_black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gotham_black.otf; sourceTree = "<group>"; };
+		612EE04229DAC69000DBA06B /* gotham_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gotham_bold.otf; sourceTree = "<group>"; };
+		612EE04329DAC69000DBA06B /* gotham_book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gotham_book.ttf; sourceTree = "<group>"; };
+		612EE04429DAC69100DBA06B /* gotham_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gotham_medium.ttf; sourceTree = "<group>"; };
 		6136FB9429D10B40004D96D3 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		6136FB9629D10E2D004D96D3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		614C95CB29C08DB2004C1397 /* Geely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geely.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,13 +93,6 @@
 		614C95EB29C08DC8004C1397 /* GeelyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeelyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		614C95EF29C08DC8004C1397 /* GeelyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeelyUITests.swift; sourceTree = "<group>"; };
 		614C95F129C08DC8004C1397 /* GeelyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeelyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		614C95FE29C0B5A2004C1397 /* gotham_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gotham_bold.otf; path = ../../../Downloads/font/gotham_bold.otf; sourceTree = "<group>"; };
-		614C95FF29C0B5A2004C1397 /* fbspacer_black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = fbspacer_black.otf; path = ../../../Downloads/font/fbspacer_black.otf; sourceTree = "<group>"; };
-		614C960029C0B5A2004C1397 /* gotham_book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gotham_book.ttf; path = ../../../Downloads/font/gotham_book.ttf; sourceTree = "<group>"; };
-		614C960129C0B5A3004C1397 /* fbspacer_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = fbspacer_bold.otf; path = ../../../Downloads/font/fbspacer_bold.otf; sourceTree = "<group>"; };
-		614C960229C0B5A3004C1397 /* gotham_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gotham_medium.ttf; path = ../../../Downloads/font/gotham_medium.ttf; sourceTree = "<group>"; };
-		614C960329C0B5A3004C1397 /* gotham_black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gotham_black.otf; path = ../../../Downloads/font/gotham_black.otf; sourceTree = "<group>"; };
-		614C960429C0B5A3004C1397 /* fbspacer_regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = fbspacer_regular.otf; path = ../../../Downloads/font/fbspacer_regular.otf; sourceTree = "<group>"; };
 		61726FDA29D186A1001AB06A /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
 		61726FDC29D191B8001AB06A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		61726FDF29D1B608001AB06A /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
@@ -162,13 +156,6 @@
 		614C95C229C08DB2004C1397 = {
 			isa = PBXGroup;
 			children = (
-				614C95FF29C0B5A2004C1397 /* fbspacer_black.otf */,
-				614C960129C0B5A3004C1397 /* fbspacer_bold.otf */,
-				614C960429C0B5A3004C1397 /* fbspacer_regular.otf */,
-				614C960329C0B5A3004C1397 /* gotham_black.otf */,
-				614C95FE29C0B5A2004C1397 /* gotham_bold.otf */,
-				614C960029C0B5A2004C1397 /* gotham_book.ttf */,
-				614C960229C0B5A3004C1397 /* gotham_medium.ttf */,
 				614C95CD29C08DB2004C1397 /* Geely */,
 				614C95E429C08DC8004C1397 /* GeelyTests */,
 				614C95EE29C08DC8004C1397 /* GeelyUITests */,
@@ -189,6 +176,10 @@
 		614C95CD29C08DB2004C1397 /* Geely */ = {
 			isa = PBXGroup;
 			children = (
+				612EE04129DAC68F00DBA06B /* gotham_black.otf */,
+				612EE04229DAC69000DBA06B /* gotham_bold.otf */,
+				612EE04329DAC69000DBA06B /* gotham_book.ttf */,
+				612EE04429DAC69100DBA06B /* gotham_medium.ttf */,
 				61726FDE29D1B2C9001AB06A /* MainPage */,
 				61EAAB8A29CCF9BB0083FF4F /* Assets.xcassets */,
 				614C95CE29C08DB2004C1397 /* AppDelegate.swift */,
@@ -200,7 +191,6 @@
 				614C95D929C08DC6004C1397 /* LaunchScreen.storyboard */,
 				61D6057A29C6860B0058E711 /* IQKeyboardManagerSwift */,
 				614C95DC29C08DC6004C1397 /* Info.plist */,
-				61726FDA29D186A1001AB06A /* CarCollectionViewCell.xib */,
 			);
 			path = Geely;
 			sourceTree = "<group>";
@@ -228,10 +218,13 @@
 				61CBE01E29CAF725009652C8 /* HomeScreenNavigationController.swift */,
 				619D38FA29C997B800E9A9D3 /* HomeScreenController.swift */,
 				6136FB9629D10E2D004D96D3 /* Service.swift */,
+				612EE03929D4399D00DBA06B /* Car.swift */,
 				61CBE01829C9BB23009652C8 /* navigationBarController.swift */,
 				61CBE01629C9B20C009652C8 /* customizeTabBar.swift */,
 				61CBE02029CB16FC009652C8 /* CurvedTabBar.swift */,
 				6136FB9429D10B40004D96D3 /* ServicesCollectionViewCell.swift */,
+				61726FDA29D186A1001AB06A /* CarCollectionViewCell.xib */,
+				612EE03729D42E8B00DBA06B /* HomeCollectionViewCell.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -413,14 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				614C960529C0B5A3004C1397 /* gotham_bold.otf in Resources */,
-				614C960629C0B5A3004C1397 /* fbspacer_black.otf in Resources */,
 				61EAAB8B29CCF9BB0083FF4F /* Assets.xcassets in Resources */,
-				614C960729C0B5A3004C1397 /* gotham_book.ttf in Resources */,
-				614C960829C0B5A3004C1397 /* fbspacer_bold.otf in Resources */,
-				614C960929C0B5A3004C1397 /* gotham_medium.ttf in Resources */,
-				614C960A29C0B5A3004C1397 /* gotham_black.otf in Resources */,
-				614C960B29C0B5A3004C1397 /* fbspacer_regular.otf in Resources */,
 				614C95DB29C08DC6004C1397 /* LaunchScreen.storyboard in Resources */,
 				614C95D829C08DC6004C1397 /* Assets.xcassets in Resources */,
 				614C95D629C08DB2004C1397 /* Main.storyboard in Resources */,
@@ -472,9 +458,11 @@
 				61D605A329C6860B0058E711 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				61D605AD29C6860B0058E711 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */,
 				61D605A629C6860B0058E711 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
+				612EE03829D42E8B00DBA06B /* HomeCollectionViewCell.swift in Sources */,
 				61D605A429C6860B0058E711 /* IQKeyboardManager.swift in Sources */,
 				61D605A929C6860B0058E711 /* IQUIViewController+Additions.swift in Sources */,
 				61D605AB29C6860B0058E711 /* IQUIView+Hierarchy.swift in Sources */,
+				612EE03A29D4399D00DBA06B /* Car.swift in Sources */,
 				61D605A529C6860B0058E711 /* IQKeyboardManager+Debug.swift in Sources */,
 				6136FB9729D10E2D004D96D3 /* Service.swift in Sources */,
 				61D605A729C6860B0058E711 /* IQKeyboardManager+Toolbar.swift in Sources */,

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="gotham_bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="gotham_book.ttf">
+            <string>GothamHTF-Book</string>
+        </array>
+        <array key="gotham_medium.ttf">
+            <string>GothamMedium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="UHo-9o-d4c" customClass="HomeCollectionViewCell" customModule="Geely" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="547"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tna-SP-1AP">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="547"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljp-G3-p8e">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="360"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fnz-Xf-Vrq">
+                                <rect key="frame" x="0.0" y="67" width="342" height="480"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iH1-Uv-HVA" userLabel="CarModelView">
+                                        <rect key="frame" x="20" y="75" width="302" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GEOMETRY C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnH-6w-arB" userLabel="CarName">
+                                                <rect key="frame" x="69" y="15" width="110.33333333333331" height="20"/>
+                                                <accessibility key="accessibilityConfiguration" label="CarName"/>
+                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RectangleRotated" id="awp-Jp-fQp">
+                                                <rect key="frame" x="185" y="15" width="8" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="460" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZB-kC-lrI" userLabel="ModelNo">
+                                                <rect key="frame" x="209.33333333333334" y="15" width="28.666666666666657" height="20"/>
+                                                <accessibility key="accessibilityConfiguration" label="Model"/>
+                                                <fontDescription key="fontDescription" name="GothamMedium" family="Gotham" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="BZB-kC-lrI" firstAttribute="baseline" secondItem="CnH-6w-arB" secondAttribute="baseline" id="GZh-MI-tGS"/>
+                                            <constraint firstItem="CnH-6w-arB" firstAttribute="centerX" secondItem="iH1-Uv-HVA" secondAttribute="centerX" constant="-27" id="JIn-ac-GI4"/>
+                                            <constraint firstItem="BZB-kC-lrI" firstAttribute="leading" secondItem="CnH-6w-arB" secondAttribute="trailing" constant="30" id="Vco-Jk-ttb"/>
+                                            <constraint firstItem="BZB-kC-lrI" firstAttribute="top" secondItem="awp-Jp-fQp" secondAttribute="top" id="fXt-jw-1j5"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PXB-I4-aj3">
+                                        <rect key="frame" x="0.0" y="151" width="322" height="139"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-TR-46J" userLabel="BatteryWarningView">
+                                                <rect key="frame" x="0.0" y="0.0" width="322" height="74"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="geely_notification_card_bg_img" translatesAutoresizingMaskIntoConstraints="NO" id="J1V-Ky-gqs">
+                                                        <rect key="frame" x="20" y="3" width="297" height="64"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-Cn-POB">
+                                                        <rect key="frame" x="37" y="33" width="263" height="4"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="progressTintColor" name="NiceBlue"/>
+                                                    </progressView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Battery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od3-Fx-W6Y">
+                                                        <rect key="frame" x="37" y="16" width="30" height="9"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="GothamHTF-Book" family="Gotham HTF" pointSize="8"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-lC-aFh" userLabel="BatteryPercentage">
+                                                        <rect key="frame" x="69" y="12" width="9" height="16"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Km Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjY-dS-opy" userLabel="KmLeft">
+                                                        <rect key="frame" x="259" y="16" width="32" height="9"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="GothamHTF-Book" family="Gotham HTF" pointSize="8"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drM-Xq-COu" userLabel="KmLeftValue">
+                                                        <rect key="frame" x="246" y="12" width="9" height="16"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11:34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zC4-yt-dMF" userLabel="FullyChargedTime">
+                                                        <rect key="frame" x="259" y="41" width="33" height="16"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fp-7X-nE2" userLabel="%">
+                                                        <rect key="frame" x="77" y="12" width="12" height="16"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Battery will be fully charged at " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRX-FC-95m" userLabel="fullyChargedLabel">
+                                                        <rect key="frame" x="113" y="45" width="142" height="9"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="GothamHTF-Book" family="Gotham HTF" pointSize="8"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="BlueWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kI7-F2-5fY" userLabel="NotificationView">
+                                                <rect key="frame" x="0.0" y="74" width="322" height="65"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="geely_notification_card_bg_img" translatesAutoresizingMaskIntoConstraints="NO" id="uhX-u8-vjr">
+                                                        <rect key="frame" x="20" y="3" width="297" height="64"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The list of notification in your list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ire-d0-cd3" userLabel="listOfNotificationLabel">
+                                                        <rect key="frame" x="125" y="37" width="130" height="9"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="GothamHTF-Book" family="Gotham HTF" pointSize="8"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Warning Lights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbV-2R-4tr">
+                                                        <rect key="frame" x="194" y="20" width="61" height="9"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="GothamHTF-Book" family="Gotham HTF" pointSize="8"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNi-Si-PRD" userLabel="NumberOfWarningsLights">
+                                                        <rect key="frame" x="181" y="16" width="9" height="16"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="error_triangle_icon" translatesAutoresizingMaskIntoConstraints="NO" id="NVz-Dm-HWT">
+                                                        <rect key="frame" x="269" y="18" width="31" height="31"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" name="BlueWhite"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="BlueWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kI7-F2-5fY" firstAttribute="top" secondItem="PXB-I4-aj3" secondAttribute="top" constant="74" id="wEI-Sn-WpM"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTl-uK-9Qe" userLabel="VegicleLavelView">
+                                        <rect key="frame" x="20" y="126" width="302" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErC-sc-VDi" userLabel="VehicleNoLabel">
+                                                <rect key="frame" x="78.666666666666657" y="6" width="84.666666666666657" height="13"/>
+                                                <fontDescription key="fontDescription" name="GothamHTF-Book" family="Gotham HTF" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="51-984-74" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAX-cH-2cH" userLabel="VehicleNo">
+                                                <rect key="frame" x="173" y="5.6666666666666572" width="56.333333333333343" height="14"/>
+                                                <fontDescription key="fontDescription" name="GothamHTF-Book" family="Gotham HTF" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="eAX-cH-2cH" firstAttribute="centerY" secondItem="YTl-uK-9Qe" secondAttribute="centerY" id="9bY-oj-SZP"/>
+                                            <constraint firstItem="eAX-cH-2cH" firstAttribute="centerX" secondItem="YTl-uK-9Qe" secondAttribute="centerX" constant="50" id="BtK-xD-gAN"/>
+                                            <constraint firstItem="ErC-sc-VDi" firstAttribute="centerY" secondItem="YTl-uK-9Qe" secondAttribute="centerY" id="bjs-xq-zyi"/>
+                                            <constraint firstItem="ErC-sc-VDi" firstAttribute="centerX" secondItem="YTl-uK-9Qe" secondAttribute="centerX" constant="-30" id="lOK-up-5M8"/>
+                                            <constraint firstItem="ErC-sc-VDi" firstAttribute="top" secondItem="YTl-uK-9Qe" secondAttribute="top" constant="6" id="tYm-Ti-Lri"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="BlueWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YTl-uK-9Qe" firstAttribute="top" secondItem="Fnz-Xf-Vrq" secondAttribute="top" constant="126" id="1ne-HT-T9A"/>
+                                    <constraint firstItem="YTl-uK-9Qe" firstAttribute="top" secondItem="iH1-Uv-HVA" secondAttribute="bottom" constant="4" id="423-PS-nOQ"/>
+                                    <constraint firstItem="PXB-I4-aj3" firstAttribute="leading" secondItem="Fnz-Xf-Vrq" secondAttribute="leading" id="BkC-44-Of4"/>
+                                    <constraint firstItem="PXB-I4-aj3" firstAttribute="trailing" secondItem="YTl-uK-9Qe" secondAttribute="trailing" id="Gjp-vc-2hY"/>
+                                    <constraint firstItem="iH1-Uv-HVA" firstAttribute="leading" secondItem="Fnz-Xf-Vrq" secondAttribute="leading" constant="20" id="M7l-Ca-D1n"/>
+                                    <constraint firstAttribute="trailing" secondItem="iH1-Uv-HVA" secondAttribute="trailing" constant="20" id="MlL-JD-WeL"/>
+                                    <constraint firstItem="iH1-Uv-HVA" firstAttribute="top" secondItem="Fnz-Xf-Vrq" secondAttribute="top" constant="75" id="RG8-Cn-V59"/>
+                                    <constraint firstAttribute="bottom" secondItem="PXB-I4-aj3" secondAttribute="bottom" constant="190" id="Uvv-wX-4t1"/>
+                                    <constraint firstItem="YTl-uK-9Qe" firstAttribute="leading" secondItem="Fnz-Xf-Vrq" secondAttribute="leading" constant="20" id="ZT3-ci-Rmk"/>
+                                    <constraint firstAttribute="trailing" secondItem="YTl-uK-9Qe" secondAttribute="trailing" constant="20" id="mhr-D2-qLE"/>
+                                    <constraint firstItem="PXB-I4-aj3" firstAttribute="top" secondItem="YTl-uK-9Qe" secondAttribute="bottom" id="t5Y-e1-boe"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_car_img" translatesAutoresizingMaskIntoConstraints="NO" id="s3y-F9-Fiv">
+                                <rect key="frame" x="72" y="20" width="198" height="118"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="s3y-F9-Fiv" firstAttribute="top" secondItem="ljp-G3-p8e" secondAttribute="top" constant="20" id="Baz-Nk-sLJ"/>
+                            <constraint firstItem="Fnz-Xf-Vrq" firstAttribute="centerX" secondItem="s3y-F9-Fiv" secondAttribute="centerX" id="O2a-lD-ChP"/>
+                            <constraint firstItem="Fnz-Xf-Vrq" firstAttribute="top" secondItem="ljp-G3-p8e" secondAttribute="topMargin" id="VIK-in-BMt"/>
+                            <constraint firstAttribute="trailing" secondItem="Fnz-Xf-Vrq" secondAttribute="trailing" id="Wj2-2v-AQU"/>
+                            <constraint firstItem="Fnz-Xf-Vrq" firstAttribute="leading" secondItem="ljp-G3-p8e" secondAttribute="leading" id="ugM-cw-Wqc"/>
+                            <constraint firstAttribute="bottom" secondItem="Fnz-Xf-Vrq" secondAttribute="bottom" constant="-187" id="yVL-He-fp5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ljp-G3-p8e" secondAttribute="bottom" constant="188" id="XZh-jz-DUL"/>
+                    <constraint firstItem="ljp-G3-p8e" firstAttribute="leading" secondItem="tna-SP-1AP" secondAttribute="leading" id="g5N-SW-Uov"/>
+                    <constraint firstItem="ljp-G3-p8e" firstAttribute="top" secondItem="tna-SP-1AP" secondAttribute="top" id="k3H-Y3-4jN"/>
+                    <constraint firstItem="ljp-G3-p8e" firstAttribute="centerX" secondItem="tna-SP-1AP" secondAttribute="centerX" id="pT7-nZ-9EY"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="342" height="547"/>
+            <connections>
+                <outlet property="BatteryPercentage" destination="q0m-lC-aFh" id="aGK-IU-DmB"/>
+                <outlet property="CarImage" destination="s3y-F9-Fiv" id="IrW-RI-jcF"/>
+                <outlet property="CarModel" destination="BZB-kC-lrI" id="PrJ-3b-IJA"/>
+                <outlet property="CarName" destination="CnH-6w-arB" id="8qg-ju-CQu"/>
+                <outlet property="KmLeft" destination="drM-Xq-COu" id="aDC-oP-tSq"/>
+                <outlet property="NumberOfWarningsLight" destination="tNi-Si-PRD" id="jgL-3s-VXS"/>
+                <outlet property="TimeLeftToFullyCharge" destination="zC4-yt-dMF" id="UWn-vG-vDd"/>
+                <outlet property="VehicleNo" destination="eAX-cH-2cH" id="lu3-yD-zdc"/>
+            </connections>
+            <point key="canvasLocation" x="242.74809160305344" y="89.788732394366207"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="RectangleRotated" width="2" height="100"/>
+        <image name="dummy_car_img" width="198" height="118"/>
+        <image name="error_triangle_icon" width="125" height="109"/>
+        <image name="geely_notification_card_bg_img" width="296.66665649414062" height="64"/>
+        <namedColor name="BlueWhite">
+            <color red="0.94117647058823528" green="0.96470588235294119" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NiceBlue">
+            <color red="0.054901960784313725" green="0.49411764705882355" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
