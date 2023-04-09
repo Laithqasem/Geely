@@ -55,21 +55,24 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
             
                       print("------------")
 
-            cell.backgroundColor = UIColor.white;
+            cell.backgroundColor = UIColor.black;
             cell.layer.shadowRadius = 20
             cell.layer.cornerRadius = 20
             
             cell.layer.masksToBounds = false //<-
 
-          
+            print("YEEES")
+
             return cell
         
         }
+        print("YEEES2")
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ServicesCollectionViewCell", for: indexPath) as! ServicesCollectionViewCell
-        cell.setup(with: servicesForCar[indexPath.row])
+        cell.setup(with: services[indexPath.row])
+//        cell.setup(with: servicesForCar[indexPath.row])
 //                cell.setup(with: Cars[indexPath.row].Services[indexPath.row])
-        self.CollectionView.reloadData()
-        cell.backgroundColor = UIColor.white
+ //       self.CollectionView.reloadData()
+        cell.backgroundColor = UIColor.black
  
                 cell.layer.cornerRadius = 20
                 cell.layer.shadowColor = dropShadow.cgColor

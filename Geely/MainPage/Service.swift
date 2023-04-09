@@ -12,16 +12,4 @@ struct Service {
     let serviceName: String
 }
 
-let services: [Service] = [
-    Service(serviceIcon: UIImage(named: "chargingPointIcon")!, serviceName: "Charging"),
-    Service(serviceIcon: UIImage(named: "batteryIcon")!, serviceName: "Charging"),
-    Service(serviceIcon: UIImage(named: "chargingPointIcon")!, serviceName: "Charging"),
-    Service(serviceIcon: UIImage(named: "orderATreatmentIcon")!, serviceName: "Order A Treatment"),
-    Service(serviceIcon: UIImage(named: "orderATreatmentIcon")!, serviceName: "Order A Treatment"),
-    Service(serviceIcon: UIImage(named: "chargingPointIcon")!, serviceName: "Charging"),
-    Service(serviceIcon: UIImage(named: "chargingPointIcon")!, serviceName: "Charging"),
-    Service(serviceIcon: UIImage(named: "chargingPointIcon")!, serviceName: "Charging"),
-    Service(serviceIcon: UIImage(named: "orderATreatmentIcon")!, serviceName: "Order A Treatment"),
-    Service(serviceIcon: UIImage(named: "orderATreatmentIcon")!, serviceName: "Order A Treatment"),
 
-]
