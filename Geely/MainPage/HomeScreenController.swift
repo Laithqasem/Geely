@@ -12,23 +12,13 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
    
     //Mark: - Outlets
     @IBOutlet weak var notificationsNumber: UILabel!
-    
-    
     @IBOutlet weak var pageControlSlider: UIPageControl!
-    
     @IBOutlet weak var notificationNumberView: UIView!
-    
     @IBOutlet weak var notificationBtn: UIButton!
-    
     @IBOutlet weak var CollectionView: UICollectionView!
-    
     @IBOutlet weak var navBarView: UIView!
-    
     @IBOutlet weak var HomeScrollView: UIScrollView!
-    
     @IBOutlet weak var CarCollectionView: UICollectionView!
-    
-
     var numberofservices = 5
     
     //Mark: - functions
@@ -36,7 +26,6 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
         if(collectionView == CarCollectionView){
             return Cars.count
         }
-        
         return numberofservices
     }
     
@@ -44,37 +33,29 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
         var servicesForCar = services
         if(collectionView == CarCollectionView){
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
-           
-          
-             // cell.backgroundColor = UIColor.blue
+            
             cell.setup(with: Cars[indexPath.row])
             pageControlSlider.currentPage = indexPath.row
             print(indexPath.row)
-//            let fullyVisibleIndexPaths = collectionView.indexPathsForFullyVisibleItems()
-//            print(fullyVisibleIndexPaths)
 
             numberofservices = Cars[indexPath.row].Services.count
-//                      print(  pageControlSlider.currentPage)
-             servicesForCar = Cars[indexPath.row].Services
+            servicesForCar = Cars[indexPath.row].Services
             
-                      print("------------")
+            print("------------")
 
             cell.layer.shadowRadius = 20
             cell.layer.cornerRadius = 20
+            cell.layer.masksToBounds = false
             
-            cell.layer.masksToBounds = false //<-
-
-
             return cell
         
         }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ServicesCollectionViewCell", for: indexPath) as! ServicesCollectionViewCell
         
-
                 cell.setup(with: servicesForCar[indexPath.row])
 
-        self.CollectionView.reloadData()
-        cell.backgroundColor = UIColor.white
+                self.CollectionView.reloadData()
+                cell.backgroundColor = UIColor.white
  
                 cell.layer.cornerRadius = 20
                 cell.layer.shadowColor = dropShadow.cgColor
@@ -82,11 +63,6 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
                 cell.layer.shadowRadius = 20
                 cell.layer.shadowOpacity = 1
                 cell.layer.masksToBounds = false //<-
-        
-
-
-        
-        
         return cell
     }
     
@@ -111,17 +87,10 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
         }
         return UIEdgeInsets(top: 0, left: 6, bottom: 8, right: 6)
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //pageControlSlider.currentPage = abs( (indexPath.row + 1) - Cars.count )
-    }
-    
-    
-   
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         CollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         CollectionView.dataSource = self
         CollectionView.delegate = self
@@ -132,8 +101,6 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
         }
         CollectionView.backgroundView = nil;
      
-
-        
         CarCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         CarCollectionView.dataSource = self
         CarCollectionView.delegate = self
@@ -143,7 +110,6 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
             
         }
         
-        
         navBarView.layer.shadowRadius = 4
         navBarView.layer.shadowOpacity = 0.2
         navBarView.layer.shadowOffset = CGSize(width: 0, height: 7)
@@ -151,34 +117,16 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
         
         notificationNumberView.backgroundColor = UIColor(named: "NiceBlue")
         notificationNumberView.layer.cornerRadius = 10
+        
         notificationBtn.layer.shadowColor = dropShadow.cgColor
         notificationBtn.layer.shadowRadius = 8
         notificationBtn.layer.shadowOpacity = 1
         notificationBtn.layer.shadowOffset = CGSize(width: 1, height: 1)
         
         pageControlSlider.numberOfPages = Cars.count
-//        HomeScrollView.contentSize = CGSize(width: self.view.frame.size.width, height: 700)
-//        HomeScrollView.backgroundColor = UIColor.black
-        
-        
-//        let swipeleft = UISwipeGestureRecognizer(target: self, action: #selector(swappedleft))
-//
-//        swipeleft.direction = .left
-//        self.CarCollectionView.addGestureRecognizer(swipeleft)
-//        let swiperight = UISwipeGestureRecognizer(target: self,action: #selector(swappedright))
-//
-//        swiperight.direction = .right
-//        self.CarCollectionView.addGestureRecognizer(swiperight)
+
     }
-    
-//    @objc func swappedleft(){
-//        pageControlSlider.currentPage += 1
-//        print("leftt")
-//    }
-//    @objc func swappedright(){
-//        pageControlSlider.currentPage -= 1
-//        print("right")
-//    }
+
 }
 
 
@@ -186,29 +134,5 @@ var dropShadow: UIColor {
         return UIColor(red: 228 / 255.0, green: 235 / 255.0, blue: 240 / 255.0, alpha: 1.0)
     }
 
-
-
-
-//extension UICollectionView {
-//
-//    func isCellAtIndexPathFullyVisible(_ indexPath: IndexPath) -> Bool {
-//
-//        guard let layoutAttribute = layoutAttributesForItem(at: indexPath) else {
-//            return false
-//        }
-//
-//        let cellFrame = layoutAttribute.frame
-//        return self.bounds.contains(cellFrame)
-//    }
-//
-//    func indexPathsForFullyVisibleItems() -> [IndexPath] {
-//
-//        let visibleIndexPaths = indexPathsForVisibleItems
-//
-//        return visibleIndexPaths.filter { indexPath in
-//            return isCellAtIndexPathFullyVisible(indexPath)
-//        }
-//    }
-//}
 
 

@@ -13,8 +13,7 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate{
    
     
     override func viewDidLoad() {
-//        
-//        view.backgroundColor = UIColor.black
+        
         super.viewDidLoad()
         self.delegate = self
         changeUnSelectedColor()
@@ -26,7 +25,6 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate{
             let frame = CGRect(x: 0, y: UIScreen.main.bounds.height - buttonHeight, width: buttonWidth, height: buttonHeight)
             let button = UIButton(frame: frame)
             
-
             indeedTabBarController.view.addSubview(button)
         }
     }
@@ -64,15 +62,10 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate{
         middleButton.setTitle("24/7", for: .normal)
         middleButton.applyGradient(colors : [UIColor(red: 0.12, green: 0.50, blue: 0.69, alpha: 1.00).cgColor,UIColor(red: 0.63, green: 0.22, blue: 1.00, alpha: 1.00).cgColor ] )
 
-//        middleButton.setBackgroundImage(UIImage(named: "tabbarmiddleButton"), for: .normal)
         middleButton.clipsToBounds = true
         
         middleButton.addTarget(self, action: #selector(callButtonFunc), for: .touchUpInside)
-        
-        
-        
-        
-        
+
         self.tabBar.addSubview(middleButton)
         self.view.layoutIfNeeded()
     }
@@ -82,8 +75,6 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate{
         if let url = URL(string: "tel://00970599131062"),
            UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            
-            
         }
         
     }

@@ -53,6 +53,7 @@ class ViewController: UIViewController {
         }
     }
 
+    //MARK: - Functions
     func loginBtnDefault (){
         loginBtn.layer.borderColor = UIColor.black.cgColor
         loginBtn.layer.borderWidth = 1
