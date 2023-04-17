@@ -45,6 +45,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
         //ProgressBar.tintColor = UIColor(named: "ToyotaCherryRed")
         ProgressBar.setProgress(Float(abs(car.BatteryRemaining - 100) )/100, animated: true)
         ProgressBar.transform = CGAffineTransformMakeScale(1, 2)
+        ProgressBar.layer.cornerRadius = 2
+
         ProgressBar.applyGradient(colors : [
             UIColor(red: 0.17, green: 0.73, blue: 0.00, alpha: 1.00).cgColor,
             UIColor(red: 0.64, green: 1.00, blue: 0.00, alpha: 1.00).cgColor,
@@ -52,7 +54,6 @@ class HomeCollectionViewCell: UICollectionViewCell {
             UIColor(red: 1.00, green: 0.65, blue: 0.00, alpha: 1.00).cgColor,
             UIColor(red: 1.00, green: 0.00, blue: 0.00, alpha: 1.00).cgColor
         ] )
-        ProgressBar.layer.cornerRadius = 20
  
     }
     

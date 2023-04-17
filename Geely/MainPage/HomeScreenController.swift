@@ -13,6 +13,7 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
     //Mark: - Outlets
     @IBOutlet weak var notificationsNumber: UILabel!
     
+    
     @IBOutlet weak var pageControlSlider: UIPageControl!
     
     @IBOutlet weak var notificationNumberView: UIView!
@@ -23,10 +24,12 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
     
     @IBOutlet weak var navBarView: UIView!
     
+    @IBOutlet weak var HomeScrollView: UIScrollView!
+    
     @IBOutlet weak var CarCollectionView: UICollectionView!
     
-    
-    var numberofservices = 0
+
+    var numberofservices = 5
     
     //Mark: - functions
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -43,9 +46,10 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
            
           
-            
              // cell.backgroundColor = UIColor.blue
             cell.setup(with: Cars[indexPath.row])
+            pageControlSlider.currentPage = indexPath.row
+            print(indexPath.row)
 //            let fullyVisibleIndexPaths = collectionView.indexPathsForFullyVisibleItems()
 //            print(fullyVisibleIndexPaths)
 
@@ -55,24 +59,22 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
             
                       print("------------")
 
-            cell.backgroundColor = UIColor.black;
             cell.layer.shadowRadius = 20
             cell.layer.cornerRadius = 20
             
             cell.layer.masksToBounds = false //<-
 
-            print("YEEES")
 
             return cell
         
         }
-        print("YEEES2")
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ServicesCollectionViewCell", for: indexPath) as! ServicesCollectionViewCell
-        cell.setup(with: services[indexPath.row])
-//        cell.setup(with: servicesForCar[indexPath.row])
-//                cell.setup(with: Cars[indexPath.row].Services[indexPath.row])
- //       self.CollectionView.reloadData()
-        cell.backgroundColor = UIColor.black
+        
+
+                cell.setup(with: servicesForCar[indexPath.row])
+
+        self.CollectionView.reloadData()
+        cell.backgroundColor = UIColor.white
  
                 cell.layer.cornerRadius = 20
                 cell.layer.shadowColor = dropShadow.cgColor
@@ -81,7 +83,8 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
                 cell.layer.shadowOpacity = 1
                 cell.layer.masksToBounds = false //<-
         
-                
+
+
         
         
         return cell
@@ -90,14 +93,13 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if(collectionView == CarCollectionView){
-            return CGSize(width: self.view.frame.width * 0.95, height: self.view.frame.width + 20)
+            return CGSize(width: self.view.frame.width * 0.98, height: self.view.frame.width + 20)
         }
         return CGSize(width: self.view.frame.width * 0.3, height: self.view.frame.width * 0.3 + 8)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         if(collectionView == CarCollectionView){
-            
             return 0
         }
         return 8
@@ -105,12 +107,12 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if(collectionView == CarCollectionView){
             
-            return UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0)
+            return UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 8)
         }
         return UIEdgeInsets(top: 0, left: 6, bottom: 8, right: 6)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        pageControlSlider.currentPage = abs( (indexPath.row + 1) - Cars.count )
+        //pageControlSlider.currentPage = abs( (indexPath.row + 1) - Cars.count )
     }
     
     
@@ -119,6 +121,7 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         CollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         CollectionView.dataSource = self
         CollectionView.delegate = self
@@ -127,6 +130,10 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
             layout.scrollDirection = .horizontal
             
         }
+        CollectionView.backgroundView = nil;
+     
+
+        
         CarCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         CarCollectionView.dataSource = self
         CarCollectionView.delegate = self
@@ -150,19 +157,37 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
         notificationBtn.layer.shadowOffset = CGSize(width: 1, height: 1)
         
         pageControlSlider.numberOfPages = Cars.count
+//        HomeScrollView.contentSize = CGSize(width: self.view.frame.size.width, height: 700)
+//        HomeScrollView.backgroundColor = UIColor.black
         
-       
         
-        
+//        let swipeleft = UISwipeGestureRecognizer(target: self, action: #selector(swappedleft))
+//
+//        swipeleft.direction = .left
+//        self.CarCollectionView.addGestureRecognizer(swipeleft)
+//        let swiperight = UISwipeGestureRecognizer(target: self,action: #selector(swappedright))
+//
+//        swiperight.direction = .right
+//        self.CarCollectionView.addGestureRecognizer(swiperight)
     }
     
-    
+//    @objc func swappedleft(){
+//        pageControlSlider.currentPage += 1
+//        print("leftt")
+//    }
+//    @objc func swappedright(){
+//        pageControlSlider.currentPage -= 1
+//        print("right")
+//    }
 }
 
 
 var dropShadow: UIColor {
         return UIColor(red: 228 / 255.0, green: 235 / 255.0, blue: 240 / 255.0, alpha: 1.0)
     }
+
+
+
 
 //extension UICollectionView {
 //
