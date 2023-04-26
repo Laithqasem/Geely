@@ -13,7 +13,7 @@ class ServicesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var SeviceName: UILabel!
     @IBOutlet weak var ServiceIcon: UIImageView!
     
-    
+    // add awakefromnib and reuse 
     func setup(with service: Service) {
         ServiceIcon.image = service.serviceIcon
         SeviceName.text = service.serviceName

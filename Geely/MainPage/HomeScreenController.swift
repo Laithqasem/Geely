@@ -11,6 +11,7 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
     
    
     //Mark: - Outlets
+    //MARK: - Outlets
     @IBOutlet weak var notificationsNumber: UILabel!
     @IBOutlet weak var pageControlSlider: UIPageControl!
     @IBOutlet weak var notificationNumberView: UIView!
@@ -19,12 +20,14 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet weak var navBarView: UIView!
     @IBOutlet weak var HomeScrollView: UIScrollView!
     @IBOutlet weak var CarCollectionView: UICollectionView!
+    
+    //MARK: - Variables
     var numberofservices = 5
     
-    //Mark: - functions
+    //MARK: - functions
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if(collectionView == CarCollectionView){
-            return Cars.count
+            return Cars.count // variables shouls start with small letters
         }
         return numberofservices
     }
@@ -33,7 +36,7 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
         var servicesForCar = services
         if(collectionView == CarCollectionView){
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
-            
+            // add if let car = Cars[indexPath.row] or guard
             cell.setup(with: Cars[indexPath.row])
             pageControlSlider.currentPage = indexPath.row
             print(indexPath.row)
@@ -43,6 +46,7 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
             
             print("------------")
 
+            // move to cell 
             cell.layer.shadowRadius = 20
             cell.layer.cornerRadius = 20
             cell.layer.masksToBounds = false
@@ -57,6 +61,7 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
                 self.CollectionView.reloadData()
                 cell.backgroundColor = UIColor.white
  
+        // move these values
                 cell.layer.cornerRadius = 20
                 cell.layer.shadowColor = dropShadow.cgColor
                 cell.layer.shadowOffset = CGSize(width: 0, height: 0)
@@ -88,9 +93,12 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
         return UIEdgeInsets(top: 0, left: 6, bottom: 8, right: 6)
     }
   
+    // MARK: - LifeCycle
+    // read about application life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // move these to setupCollectionView method
         CollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         CollectionView.dataSource = self
         CollectionView.delegate = self
@@ -130,9 +138,11 @@ class HomeScreenController: UIViewController, UICollectionViewDataSource, UIColl
 }
 
 
+// add extension for all colors you need
 var dropShadow: UIColor {
         return UIColor(red: 228 / 255.0, green: 235 / 255.0, blue: 240 / 255.0, alpha: 1.0)
     }
 
 
 
+// add extention for collection view delegates

@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-     // update names
+     
     //MARK: - Outlets
     @IBOutlet weak var backgroundImg: UIImageView!
     @IBOutlet weak var loginBtn: UIButton!
@@ -19,7 +19,19 @@ class ViewController: UIViewController {
     let defaults = UserDefaults.standard
     var checkFlag = false;
 
+    // MARK: LifeCycle
+    // read about viewDidLoad and viewWillAppear
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loginBtnDefault()
+        textFieldDefault()
+        MobileNo.text = defaults.string(forKey: "MobileNo")
+        vehicleNo.text = defaults.string(forKey: "VehicleNo")
+        
+    }
+    
     //MARK: - Actions
+    
     
     @IBAction func login(_ sender: Any) {
         textFieldDefault()
@@ -28,7 +40,8 @@ class ViewController: UIViewController {
 
     }
     @IBAction func changeCheckButton(_ sender: UIButton) {
-        
+        // loginBtn.isEnabled = false or true
+        loginBtn.setBackgroundImage(UIImage.init(named: "rounded_btn_blue_bg"), for: .normal) // rounded_btn_blue_border
         if sender.currentImage === UIImage(named: "check") {
             sender.setImage(UIImage(named: "check box"), for: .normal)
             loginBtn.isEnabled = true
@@ -68,20 +81,12 @@ class ViewController: UIViewController {
         vehicleNo.layer.cornerRadius = 5
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loginBtnDefault()
-        textFieldDefault()
-        MobileNo.text = defaults.string(forKey: "MobileNo")
-        vehicleNo.text = defaults.string(forKey: "VehicleNo")
-        
-    }
-    
-    
 }
 
     //MARK: - extensions
 
+// move to seperate file
+// not used
 extension UIButton {
     
     func applyGradient( colors : [CGColor]) {

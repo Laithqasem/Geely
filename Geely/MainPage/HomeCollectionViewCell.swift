@@ -10,7 +10,7 @@ import UIKit
 class HomeCollectionViewCell: UICollectionViewCell {
     
     //Mark: - Outlets
-
+ // names should start with small
     @IBOutlet weak var CarName: UILabel!
     @IBOutlet weak var CarImage: UIImageView!
     @IBOutlet weak var CarModel: UILabel!
@@ -25,6 +25,20 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     //Mark: - Functions
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // set UI
+        
+        CardView.layer.cornerRadius = 30
+        errorBackgroundImage.layer.cornerRadius = 20
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        // read about it
+    }
+    
+    
     func setup(with car: Car) {
         CarImage.image = car.CarPhoto
         CarName.text = car.CarName
@@ -34,12 +48,12 @@ class HomeCollectionViewCell: UICollectionViewCell {
         KmLeft.text = String(car.KmLeft)
         NumberOfWarningsLight.text = String(car.NumberOfNotification)
         TimeLeftToFullyCharge.text = car.timeLeft
-        CardView.layer.cornerRadius = 30
-        errorBackgroundImage.layer.cornerRadius = 20
+       
         ProgressBar.setProgress(Float(abs(car.BatteryRemaining - 100) )/100, animated: true)
         ProgressBar.transform = CGAffineTransformMakeScale(1, 2)
         ProgressBar.layer.cornerRadius = 2
 
+        // check colors we need only start and end
         ProgressBar.applyGradient(colors : [
             UIColor(red: 0.17, green: 0.73, blue: 0.00, alpha: 1.00).cgColor,
             UIColor(red: 0.64, green: 1.00, blue: 0.00, alpha: 1.00).cgColor,
@@ -53,7 +67,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
 }
 
 //Mark: - Extensions
-
+// extention for UIProgressView in seperate file
 extension UIProgressView{
     func applyGradient( colors : [CGColor]) {
         let gradientLayer = CAGradientLayer()

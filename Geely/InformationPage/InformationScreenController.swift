@@ -36,6 +36,7 @@ class InformationScreenController: UIViewController, UITableViewDelegate,UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // use cell as xib file 
         let cell = FirstTableView.dequeueReusableCell(withIdentifier: "AuthorizedCenterSevicesCell", for: indexPath ) as! ServicesTableViewCell
         
         cell.setupCell(icon: authorizedCenterServices[indexPath.row].serviceIcon, serviceName: authorizedCenterServices[indexPath.row].serviceName)

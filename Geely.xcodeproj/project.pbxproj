@@ -162,10 +162,7 @@
 		614C95CD29C08DB2004C1397 /* Geely */ = {
 			isa = PBXGroup;
 			children = (
-				612EE04129DAC68F00DBA06B /* gotham_black.otf */,
-				612EE04229DAC69000DBA06B /* gotham_bold.otf */,
-				612EE04329DAC69000DBA06B /* gotham_book.ttf */,
-				612EE04429DAC69100DBA06B /* gotham_medium.ttf */,
+				717D3F3429F9130600559151 /* Fonts */,
 				611D490D29ED494E009848A2 /* InformationPage */,
 				61726FDE29D1B2C9001AB06A /* MainPage */,
 				61EAAB8A29CCF9BB0083FF4F /* Assets.xcassets */,
@@ -222,6 +219,17 @@
 				61726FDF29D1B608001AB06A /* TextFieldWithPadding.swift */,
 			);
 			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		717D3F3429F9130600559151 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				612EE04129DAC68F00DBA06B /* gotham_black.otf */,
+				612EE04229DAC69000DBA06B /* gotham_bold.otf */,
+				612EE04329DAC69000DBA06B /* gotham_book.ttf */,
+				612EE04429DAC69100DBA06B /* gotham_medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		81F4CC59C110D3E68DC5F9BE /* Pods */ = {
